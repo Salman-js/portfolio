@@ -170,7 +170,7 @@ body {
   background-image: url('/specialitiesBg.svg');
 }
 .speciality-container {
-  @apply bg-[#e7ab54] p-6 rounded-2xl m-6 lg:w-2/5 w-full;
+  @apply bg-[#e7ab54] p-6 rounded-2xl m-6 lg:w-2/5 w-full shadow-inner;
 }
 /* =========================Contacts ============================ */
 
@@ -184,6 +184,9 @@ body {
     system-ui, sans-serif;
 }
 @media screen and (max-width: 768px) {
+  html {
+    scroll-padding: 6.3em;
+  }
   .project-item {
     border-radius: 2em;
     width: 100%;

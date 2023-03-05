@@ -13,13 +13,16 @@ function Contacts() {
               <span className='menu-number'>03.</span> Get in touch
             </h2>
           </div>
-          <a href='mailto:salmanmoh.eth@gmail.com' className='hi-btn ml-6'>
-            <div className='hi-btn rounded-sm p-4 border border-[#e7ab54] flex flex-row'>
-              <span className='hi-gif my-auto'>
+          <a
+            href='mailto:salmanmoh.eth@gmail.com'
+            className='ml-6 lg:mt-0 mt-4'
+          >
+            <div className='rounded-sm p-4 border border-[#e7ab54] flex flex-row justify-center'>
+              <span className='my-auto'>
                 <img
                   src='https://em-content.zobj.net/source/microsoft-teams/337/waving-hand_1f44b.png'
                   alt=''
-                  className='w-[1.8em]'
+                  className='w-8'
                   animation-play-state='paused'
                 />
               </span>
