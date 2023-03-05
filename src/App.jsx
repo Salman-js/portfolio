@@ -1,11 +1,22 @@
 import Hero from './Components/hero';
+import Projects from './Components/projects';
+import Specialities from './Components/specialities';
 import TopNav from './Components/topNav';
+import ScrollToTop from 'react-scroll-to-top';
+import { GrArchlinux } from 'react-icons/gr';
 
 function App() {
   return (
     <div className='App'>
       <TopNav />
       <Hero />
+      <Projects />
+      <Specialities />
+      <ScrollToTop
+        smooth
+        component={<GrArchlinux className='m-auto' />}
+        className='bg-[#4c4c62]'
+      />
     </div>
   );
 }

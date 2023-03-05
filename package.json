@@ -11,11 +11,14 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.11",
     "@szhsin/react-menu": "^3.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "react-scroll-to-top": "^3.0.0",
+    "react-type-animation": "^2.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

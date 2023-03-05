@@ -24,12 +24,17 @@
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(/jelani.otf) format('woff2');
 }
-* {
-  transition: all ease-in-out 250ms;
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 3em;
+}
+body {
+  @apply overflow-x-hidden;
 }
 .top-nav {
-  @apply lg:w-1/2 w-4/5 py-3 px-8 rounded-2xl backdrop-blur-md bg-[#4c4c62] flex flex-row justify-between bg-opacity-25 fixed mt-10 text-white border border-gray-700;
+  @apply lg:w-1/3 w-4/5 py-3 px-8 rounded-2xl backdrop-blur-md bg-[#4c4c62] flex flex-row justify-between bg-opacity-25 fixed lg:right-20 mt-6 text-white border border-gray-700 z-50;
 }
+
 .logo {
   @apply text-5xl;
   font-family: Jelani;
@@ -39,12 +44,32 @@
   font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
     system-ui, sans-serif;
 }
-.App {
-  @apply w-full bg-black flex justify-center;
+.menu-icon {
+  transition: all ease-in-out 250ms;
 }
-
+.menu {
+  @apply bg-opacity-80 bg-[#4c4c62] backdrop-blur-md;
+}
+.menu-title {
+  @apply text-2xl text-white px-3 py-3;
+  font-family: Jelani;
+}
+.menu-item {
+  @apply hover:bg-[#3f3f5b] text-[#cbcbdd];
+}
+.menu-number {
+  @apply text-white mr-2;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+.App {
+  @apply w-screen bg-[#10101a] flex flex-col items-center lg:items-baseline;
+}
+.smooth {
+  transition: all ease-in-out 250ms;
+}
+/* ==========================Hero================================ */
 .hero {
-  @apply w-full h-screen;
+  @apply w-screen h-screen;
 }
 .hello {
   @apply text-xl font-extralight;
@@ -61,4 +86,107 @@
   @apply lg:text-7xl text-5xl font-bold  text-white mt-10 break-words;
   font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
     system-ui, sans-serif;
+}
+.view-btn {
+  @apply w-36 text-white cursor-pointer;
+}
+.view-btn:hover > .view-btn-border {
+  @apply w-4/5;
+}
+.view-btn:hover > .view-btn-text {
+  @apply text-white;
+}
+.view-btn-text {
+  @apply text-base text-slate-300 font-light;
+}
+.view-btn-border {
+  @apply w-1/3 mt-3 border-b border-white;
+  transition: all ease-in-out 250ms;
+}
+
+/* =============================Projects=========================== */
+
+.projects-container {
+  @apply w-full;
+}
+.projects-title {
+  @apply lg:text-5xl text-3xl text-gray-100 font-bold;
+  font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
+}
+.project-items-container {
+  @apply w-full flex flex-col items-center pt-20;
+}
+.project-item {
+  @apply w-full border border-gray-700 lg:p-14 p-8 flex flex-row bg-gradient-to-tr from-gray-900 to-gray-800 my-8;
+  border-radius: 4.5em;
+  width: 46em;
+  background-image: linear-gradient(#1b1b26, #10101a);
+}
+/* .stacks-container {
+  @apply pl-4;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-writing-mode: tb-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: tb-rl;
+  font-family: D-DIN Condensed, sans-serif;
+  font-size: 0.6rem;
+  line-height: 92.4%;
+  letter-spacing: 0.19em;
+  color: #8b8b8b;
+  line-height: 120%;
+} */
+
+.image-container {
+  @apply w-1/2 overflow-hidden rounded-3xl lg:block hidden;
+}
+.detail-container {
+  @apply w-full lg:w-1/2 lg:pt-16 pt-6 lg:pl-10 pl-4 flex flex-col justify-between;
+}
+.project-title {
+  @apply lg:text-4xl text-3xl font-bold text-gray-200 text-right;
+  font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
+}
+.stacks-container {
+  @apply flex flex-row mt-3 justify-end;
+}
+.description-container {
+  @apply mt-4 p-5 relative lg:right-20 bg-gray-800;
+  width: 130%;
+}
+.project-description {
+  @apply text-[#a8b2d1] text-sm text-right;
+  font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
+}
+/* ============================Specialities===================== */
+.specialities-container {
+  @apply w-full;
+}
+.specialities-inner-container {
+  @apply w-full p-16 pt-10 mt-10;
+  background-image: url('/specialitiesBg.svg');
+}
+.speciality-container {
+  @apply bg-[#e7ab54] p-6 rounded-2xl m-6 lg:w-2/5 w-full;
+}
+@media screen and (max-width: 768px) {
+  .project-item {
+    border-radius: 2em;
+    width: 100%;
+  }
+  .image-container {
+    border-radius: 1em;
+  }
+  .view-btn-text {
+    @apply text-xs;
+  }
+  .view-btn-border {
+    @apply mt-1;
+  }
+  .description-container {
+    width: 100%;
+  }
 }
