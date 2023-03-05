@@ -110,7 +110,7 @@ body {
   @apply w-full;
 }
 .projects-title {
-  @apply lg:text-5xl text-3xl text-gray-100 font-bold;
+  @apply lg:text-5xl text-2xl text-gray-100 font-bold;
   font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
     system-ui, sans-serif;
 }
@@ -171,6 +171,17 @@ body {
 }
 .speciality-container {
   @apply bg-[#e7ab54] p-6 rounded-2xl m-6 lg:w-2/5 w-full;
+}
+/* =========================Contacts ============================ */
+
+.contacts-inner-container {
+  @apply w-full p-16 mt-10 flex justify-center items-center;
+  background-image: url('/specialitiesBg.svg');
+}
+.credit {
+  @apply text-sm font-extralight text-white tracking-widest;
+  font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
 }
 @media screen and (max-width: 768px) {
   .project-item {

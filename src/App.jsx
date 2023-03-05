@@ -4,6 +4,7 @@ import Specialities from './Components/specialities';
 import TopNav from './Components/topNav';
 import ScrollToTop from 'react-scroll-to-top';
 import { GrArchlinux } from 'react-icons/gr';
+import Contacts from './Components/contact';
 
 function App() {
   return (
@@ -12,10 +13,13 @@ function App() {
       <Hero />
       <Projects />
       <Specialities />
+      <Contacts />
       <ScrollToTop
         smooth
-        component={<GrArchlinux className='m-auto' />}
-        className='bg-[#4c4c62]'
+        component={<GrArchlinux className='m-auto' color='white' />}
+        style={{
+          backgroundColor: '#4c4c62',
+        }}
       />
     </div>
   );
