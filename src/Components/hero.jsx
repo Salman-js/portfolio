@@ -16,7 +16,7 @@ function Hero() {
           <span className='work'>
             I{' '}
             <TypeAnimation
-              sequence={['develop', 3000, 'build', 3000, 'deploy', 3000]}
+              sequence={['design', 3000, 'develop', 3000, 'build', 3000]}
               wrapper='span'
               cursor={true}
               repeat={Infinity}
