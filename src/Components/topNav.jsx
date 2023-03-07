@@ -36,7 +36,7 @@ function TopNav() {
         <span className='nav-name'>Salman M.</span>
       </div>
       <div className='flex flex-row'>
-        <div className='my-auto mr-4'>
+        {/* <div className='my-auto mr-4'>
           <div
             style={{
               borderRadius: '250%',
@@ -64,7 +64,7 @@ function TopNav() {
               </Box>
             </Zoom>
           </div>
-        </div>
+        </div> */}
         <div className='my-auto'>
           <Menu
             menuButton={({ open }) => (
@@ -112,7 +112,7 @@ function TopNav() {
             align='end'
             position='anchor'
             offsetX={0}
-            offsetY={16}
+            offsetY={24}
             menuClassName='menu'
             itemProps={{
               className: 'menu',
