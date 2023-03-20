@@ -31,10 +31,12 @@ function TopNav() {
   }
   return (
     <div className='top-nav'>
-      <div className='flex flex-row justify-center items-center'>
-        <span className='logo'>S</span>
-        <span className='nav-name'>Salman M.</span>
-      </div>
+      <a href='#' className='flex items-center justify-center'>
+        <div className='flex flex-row justify-center items-center'>
+          <img src='/logo.png' alt='' className='w-6' />
+          <span className='nav-name'>Salman M.</span>
+        </div>
+      </a>
       <div className='flex flex-row'>
         {/* <div className='my-auto mr-4'>
           <div
