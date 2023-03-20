@@ -52,8 +52,8 @@ function CardItem() {
               </p>
             </div>
           </div>
-          <div className='flex flex-row w-full justify-between'>
-            <div className='my-auto flex flex-row'>
+          <div className='flex flex-row w-full justify-between z-50'>
+            <div className='my-auto flex flex-row z-50'>
               <IconButton>
                 <GitHub sx={{ color: '#6d6981' }} />
               </IconButton>

@@ -89,7 +89,6 @@
   font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
     system-ui, sans-serif;
 }
-
 @media screen and (max-width: 768px) {
   .card {
     border-radius: 2em;
