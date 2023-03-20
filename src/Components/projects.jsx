@@ -1,8 +1,13 @@
-import React from 'react';
-import ProjectItem from './projectItem';
+import React, { useEffect } from 'react';
 import HeroFooterSvg from '../assets/heroFooterSvg';
+import CardItem from './cardItem';
 
 function Projects() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = '/script.js';
+    document.body.appendChild(script);
+  }, []);
   return (
     <div className='projects-container'>
       <div className='w-full lg:p-32 p-16 pt-10 lg:pt-40'>
@@ -15,9 +20,11 @@ function Projects() {
           <div className='border-b border-gray-500 my-auto w-1/3 ml-4 pt-3 '></div>
         </div>
         <div className='project-items-container'>
-          <ProjectItem />
-          <ProjectItem />
-          <ProjectItem />
+          <div id='cards'>
+            <CardItem />
+            <CardItem />
+            <CardItem />
+          </div>
         </div>
       </div>
       <div className='w-full flex justify-center'>

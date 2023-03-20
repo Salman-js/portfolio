@@ -62,7 +62,7 @@ body {
   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
 .App {
-  @apply w-screen bg-[#10101a] flex flex-col items-center lg:items-baseline;
+  @apply w-screen bg-[#141418] flex flex-col items-center lg:items-baseline;
 }
 .smooth {
   transition: all ease-in-out 250ms;
@@ -138,29 +138,6 @@ body {
   line-height: 120%;
 } */
 
-.image-container {
-  @apply w-1/2 overflow-hidden rounded-3xl lg:block hidden;
-}
-.detail-container {
-  @apply w-full lg:w-1/2 lg:pt-16 pt-6 lg:pl-10 pl-4 flex flex-col justify-between;
-}
-.project-title {
-  @apply lg:text-4xl text-3xl font-bold text-gray-200 text-right;
-  font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
-    system-ui, sans-serif;
-}
-.stacks-container {
-  @apply flex flex-row mt-3 justify-end;
-}
-.description-container {
-  @apply mt-4 p-5 relative lg:right-20 bg-gray-800;
-  width: 130%;
-}
-.project-description {
-  @apply text-[#a8b2d1] text-sm text-right;
-  font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
-    system-ui, sans-serif;
-}
 /* ============================Specialities===================== */
 .specialities-container {
   @apply w-full;
