@@ -21,6 +21,7 @@ function Hero() {
               sequence={['design', 3000, 'develop', 3000, 'build', 3000]}
               wrapper='span'
               cursor={true}
+              className='work'
               repeat={Infinity}
             />
             stuff for the web.
