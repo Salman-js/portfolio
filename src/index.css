@@ -26,7 +26,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding: 3em;
+  scroll-padding: 7em;
 }
 body {
   @apply overflow-x-hidden;
