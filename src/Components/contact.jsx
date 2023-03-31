@@ -1,11 +1,10 @@
 import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import React from 'react';
-import HeroFooterSvg from '../assets/heroFooterSvg';
 
 function Contacts() {
   return (
-    <div className='specialities-container'>
+    <div className='specialities-container' data-aos='fade-up'>
       <div className='w-full p-20 pb-16'>
         <div className='w-4/5 flex lg:flex-row flex-col'>
           <div className='my-auto'>

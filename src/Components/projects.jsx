@@ -11,7 +11,7 @@ function Projects() {
   return (
     <div className='projects-container'>
       <div className='w-full lg:p-32 p-16 pt-10 lg:pt-40'>
-        <div className='w-4/5 flex lg:flex-row flex-col'>
+        <div className='w-4/5 flex lg:flex-row flex-col' data-aos='fade-up'>
           <div className=''>
             <h2 className='projects-title' id='works'>
               <span className='menu-number'>01.</span> Some of my works
@@ -21,6 +21,9 @@ function Projects() {
         </div>
         <div className='project-items-container'>
           <div id='cards'>
+            <CardItem />
+            <CardItem />
+            <CardItem />
             <CardItem />
             <CardItem />
             <CardItem />

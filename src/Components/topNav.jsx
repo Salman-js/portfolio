@@ -30,7 +30,7 @@ function TopNav() {
     }
   }
   return (
-    <div className='top-nav'>
+    <div className='top-nav' data-aos='fade-down'>
       <a href='#' className='flex items-center justify-center'>
         <div className='flex flex-row justify-center items-center'>
           <img src='/logo.png' alt='' className='w-6' />

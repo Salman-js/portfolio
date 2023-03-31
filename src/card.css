@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --card-color: rgb(27, 21, 31);
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
 }
+
 #cards {
-  @apply flex flex-wrap gap-2 max-w-5xl w-full space-y-8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 916px;
+  width: calc(100% - 20px);
 }
 
 #cards:hover > .card::after {
@@ -14,10 +20,14 @@
 }
 
 .card {
-  @apply lg:p-14 p-8 flex flex-row w-4/5 relative mx-auto;
-  background-color: rgba(255, 255, 255, 0.319);
-  border-radius: 4.5em;
-  height: 30em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  position: relative;
+  width: 450px;
 }
 
 .card:hover::before {
@@ -49,52 +59,115 @@
 .card::after {
   background: radial-gradient(
     600px circle at var(--mouse-x) var(--mouse-y),
-    rgba(255, 255, 255, 0.667),
+    rgba(255, 255, 255, 0.4),
     transparent 40%
   );
   z-index: 1;
 }
 
 .card > .card-content {
-  @apply flex flex-row inset-[1px] absolute p-10;
   background-color: var(--card-color);
   border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
   z-index: 2;
 }
 
-.image-container {
-  @apply w-1/2 overflow-hidden lg:block hidden;
-  border-radius: 2em;
-}
-.detail-container {
-  @apply w-full lg:w-1/2 lg:pt-16 pt-6 lg:pl-10 pl-4 flex flex-col justify-between;
+/* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
+
+h1,
+h2,
+h3,
+h4,
+span {
+  color: rgb(240, 240, 240);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  margin: 0px;
 }
 
-.project-title {
-  @apply lg:text-4xl text-3xl font-bold text-gray-200 text-right;
-  font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
-    system-ui, sans-serif;
+i {
+  color: rgb(240, 240, 240);
 }
 
-.stacks-container {
-  @apply flex flex-row mt-3 justify-end;
+.card-image {
+  @apply rounded-t-md lg:block hidden flex justify-center overflow-hidden items-center;
+  height: 140px;
+  overflow: hidden;
+}
+.card-image > img {
+  @apply lg:block hidden;
 }
 
-.description-container {
-  @apply mt-4 p-5 relative lg:right-20 bg-gray-800;
-  width: 130%;
+.card-info-wrapper {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  padding: 0px 20px;
 }
-.project-description {
-  @apply text-[#a8b2d1] text-sm text-right;
-  font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
-    system-ui, sans-serif;
+
+.card-info {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
 }
-@media screen and (max-width: 768px) {
-  .card {
-    border-radius: 2em;
-    width: 100%;
+
+.card-info-title > h3 {
+  font-size: 1.1em;
+  line-height: 20px;
+}
+
+.card-info-title > h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85em;
+  margin-top: 8px;
+}
+
+/* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
+
+@media (max-width: 1000px) {
+  #cards {
+    max-width: 1000px;
+    padding: 10px 0px;
   }
-  .description-container {
+
+  .card {
+    flex-shrink: 1;
+    width: calc(50% - 4px);
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 80%;
+    height: 180px;
+  }
+
+  .card-info-wrapper {
+    padding: 0px 10px;
+  }
+
+  .card-info > i {
+    font-size: 0.8em;
+  }
+
+  .card-info-title > h3 {
+    font-size: 0.9em;
+  }
+
+  .card-info-title > h4 {
+    font-size: 0.8em;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
     width: 100%;
   }
 }

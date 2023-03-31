@@ -21,47 +21,25 @@ function CardItem() {
     },
   ];
   return (
-    <div className='card'>
-      <div className='card-content'>
-        <div className='image-container'>
+    <div class='card' data-aos='fade-up'>
+      <div class='card-content'>
+        <div class='card-image'>
           <img
-            src='https://img.freepik.com/free-photo/low-angle-shot-tall-city-building-with-blue-sky-background-new-york_181624-20345.jpg?w=2000'
+            src='https://media.istockphoto.com/id/1331397297/photo/detail-glass-building-background.jpg?s=612x612&w=0&k=20&c=YvMWdmf7gt7GpXuDtfRMVuvcyLsrtHRIrj61keJFfEM='
             alt=''
-            className='w-full h-full'
+            className='rounded-t-lg'
           />
         </div>
-        <div className='detail-container'>
-          <div className='w-full'>
-            <p className='project-title'>Project Title</p>
-            <div className='stacks-container'>
-              {stacks.map((stack, index) => (
-                <img
-                  key={index}
-                  src={stack.image}
-                  alt=''
-                  className='mx-1 w-6'
-                />
-              ))}
+        <div class='card-info-wrapper'>
+          <div class='card-info'>
+            <i class='fa-duotone fa-apartment'></i>
+            <div class='card-info-title'>
+              <h3>Project Title</h3>
+              <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                beatae incidunt nemo repellat necessitatibus illo!
+              </h4>
             </div>
-            <div className='description-container'>
-              <p className='project-description'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur a, veritatis quis voluptas tenetur, similique rem
-                non, nisi necessitatibus esse libero delectus ex blanditiis.
-                Laborum.
-              </p>
-            </div>
-          </div>
-          <div className='flex flex-row w-full justify-between z-50'>
-            <div className='my-auto flex flex-row z-50'>
-              <IconButton>
-                <GitHub sx={{ color: '#6d6981' }} />
-              </IconButton>
-              <IconButton className='ml-3'>
-                <OpenInNewRounded sx={{ color: '#6d6981' }} />
-              </IconButton>
-            </div>
-            <img src={Design1} alt='' className='w-20' />
           </div>
         </div>
       </div>

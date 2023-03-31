@@ -8,11 +8,13 @@ function Hero() {
   return (
     <div className='hero'>
       <div className='w-full lg:p-32 p-16 pt-40'>
-        <span className='hello'>Hi, My name is</span>
-        <div className='lg:w-2/3 w-full mt-6'>
+        <span className='hello' data-aos='fade-up'>
+          Hi, My name is
+        </span>
+        <div className='lg:w-2/3 w-full mt-6' data-aos='fade-up'>
           <span className='name'>Salman Mohammed.</span>
         </div>
-        <div className='w-full mt-4'>
+        <div className='w-full mt-4' data-aos='fade-up'>
           <span className='work'>
             I{' '}
             <TypeAnimation
@@ -26,12 +28,12 @@ function Hero() {
         </div>
         <div className='w-full flex flex-row justify-between lg:mt-12 mt-6 '>
           <a href='#works'>
-            <div className='view-btn'>
+            <div className='view-btn' data-aos='fade-up'>
               <span className='view-btn-text smooth'>VIEW PROJECTS</span>
               <div className='view-btn-border'></div>
             </div>
           </a>
-          <div className='flex flex-row pr-10'>
+          <div className='flex flex-row pr-10' data-aos='fade-up'>
             <div className='my-auto'>
               <IconButton>
                 <GitHub sx={{ color: '#6d6981' }} />
