@@ -6,7 +6,10 @@ import Design1 from '../assets/design1.svg';
 
 function MiniCardItem({ item }) {
   return (
-    <div className='w-full flex flex-col space-y-1 rounded-lg'>
+    <div
+      className='w-full flex flex-col space-y-1 rounded-lg'
+      data-aos='fade-up'
+    >
       <div class='card-content'>
         <div class='card-info-wrapper'>
           <div class='card-info'>

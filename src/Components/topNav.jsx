@@ -140,7 +140,7 @@ function TopNav() {
                   <span className='menu-number'>03.</span> Contact
                 </MenuItem>
               </a>
-              <a href='#resume' className='w-full'>
+              <a href='./CV.pdf' className='w-full'>
                 <MenuItem className='hover:bg-[#3f3f5b] '>
                   <Button
                     variant='outlined'

@@ -33,22 +33,17 @@ function Contacts() {
         </div>
       </div>
       <div className='w-full flex flex-col items-center justify-center px-10 pt-4 pb-6'>
-        <p className='credit'>Designed & built by Salman Mohammed</p>
+        <p className='credit'>Designed & built by yours truly</p>
         <div className='w-full flex flex-row justify-center mb-5 mt-3'>
           <div className='my-auto'>
-            <IconButton>
+            <a href='https://github.com/Salman-js'>
               <GitHub sx={{ color: '#c6bdf9', fontSize: 20 }} />
-            </IconButton>
+            </a>
           </div>
-          <div className='my-auto'>
-            <IconButton>
+          <div className='my-auto ml-3'>
+            <a href='https://www.linkedin.com/in/salman-mohammed-970890234/'>
               <LinkedIn sx={{ color: '#c6bdf9', fontSize: 20 }} />
-            </IconButton>
-          </div>
-          <div className='my-auto'>
-            <IconButton>
-              <Twitter sx={{ color: '#c6bdf9', fontSize: 20 }} />
-            </IconButton>
+            </a>
           </div>
         </div>
       </div>

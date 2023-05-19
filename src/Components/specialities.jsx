@@ -8,7 +8,7 @@ function Specialities() {
     backend: ['Node Js', 'Express', 'Socket.io'],
     mobile: ['React Native'],
     database: ['MySQL', 'MongoDB', 'Firebase', 'PostgreSQL'],
-    tools: ['Tailwind', 'Tanstack Query', 'Redux', 'GIT', 'Docker'],
+    tools: ['Tailwind', 'Tanstack Query', 'Redux', 'Docker'],
   };
   return (
     <div className='specialities-container'>
