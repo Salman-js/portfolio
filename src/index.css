@@ -48,7 +48,8 @@ body {
   transition: all ease-in-out 250ms;
 }
 .menu {
-  @apply bg-opacity-80 bg-[#4c4c62] backdrop-blur-md;
+  @apply bg-[#4c4c62] backdrop-blur-md;
+  background-color: #4c4c62;
 }
 .menu-title {
   @apply text-2xl text-white px-3 py-3;
@@ -77,13 +78,13 @@ body {
   color: white;
 }
 .name {
-  @apply lg:text-7xl text-6xl font-bold text-[#e7ab54] mt-6;
+  @apply lg:text-7xl text-4xl font-bold text-[#e7ab54] mt-6;
   font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
     system-ui, sans-serif;
 }
 
 .work {
-  @apply lg:text-7xl text-5xl font-bold  text-white mt-10 break-words;
+  @apply lg:text-7xl text-3xl font-bold  text-white mt-10 break-words;
   font-family: Calibre, Inter, 'San Francisco', 'SF Pro Text', -apple-system,
     system-ui, sans-serif;
 }
@@ -115,10 +116,10 @@ body {
     system-ui, sans-serif;
 }
 .project-items-container {
-  @apply w-full lg:flex flex-col items-center hidden pt-20;
+  @apply w-full lg:flex flex-col items-center hidden pt-20 sm:pr-1;
 }
 .mini-project-items-container {
-  @apply w-full flex flex-col items-center lg:hidden pt-20 space-y-2;
+  @apply w-full flex flex-col items-center lg:hidden pt-10 space-y-2;
 }
 .project-item {
   @apply w-full border border-gray-700 lg:p-14 p-8 flex flex-row bg-gradient-to-tr from-gray-900 to-gray-800 my-8;
@@ -146,11 +147,11 @@ body {
   @apply w-full;
 }
 .specialities-inner-container {
-  @apply w-full p-16 pt-10 mt-10;
+  @apply w-fit mx-auto mt-10 p-6;
   background-image: url('/specialitiesBg.svg');
 }
 .speciality-container {
-  @apply bg-[#e7ab54] p-6 rounded-2xl m-6 lg:w-5/12 w-full shadow-inner flex flex-wrap;
+  @apply bg-[#e7ab54] p-6 rounded-2xl shadow-inner m-2 flex flex-col;
 }
 /* =========================Contacts ============================ */
 

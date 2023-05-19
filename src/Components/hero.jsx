@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 function Hero() {
   return (
     <div className='hero'>
-      <div className='w-full lg:p-32 p-16 pt-40'>
+      <div className='w-full lg:p-32 p-10 pt-40'>
         <span className='hello' data-aos='fade-up'>
           Hi, My name is
         </span>
@@ -36,19 +36,14 @@ function Hero() {
           </a>
           <div className='flex flex-row pr-10' data-aos='fade-up'>
             <div className='my-auto'>
-              <IconButton>
-                <GitHub sx={{ color: '#6d6981' }} />
-              </IconButton>
+              <a href='https://github.com/Salman-js'>
+                <GitHub sx={{ color: '#c6bdf9', fontSize: 20 }} />
+              </a>
             </div>
-            <div className='my-auto'>
-              <IconButton>
-                <LinkedIn sx={{ color: '#6d6981' }} />
-              </IconButton>
-            </div>
-            <div className='my-auto'>
-              <IconButton>
-                <Twitter sx={{ color: '#6d6981' }} />
-              </IconButton>
+            <div className='my-auto ml-3'>
+              <a href='https://www.linkedin.com/in/salman-mohammed-970890234/'>
+                <LinkedIn sx={{ color: '#c6bdf9', fontSize: 20 }} />
+              </a>
             </div>
           </div>
         </div>

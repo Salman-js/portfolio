@@ -19,10 +19,10 @@ function MiniCardItem({ item }) {
                 {item.type}
               </p>
               <h4>{item.description}</h4>
-              <div className='w-full flex flex-row justify-start space-x-2 my-2'>
+              <div className='w-full flex flex-wrap justify-start my-2'>
                 {item.techs.map((tech, index) => (
                   <div
-                    className='py-2 px-3 bg-slate-700 bg-opacity-20 backdrop-blur-md flex items-center justify-center rounded-full w-fit my-auto'
+                    className='py-2 px-3 bg-slate-700 bg-opacity-20 backdrop-blur-md rounded-full m-1'
                     key={index}
                   >
                     <p className='text-xs text-gray-300 font-bold font-[`Inter`] whitespace-nowrap'>

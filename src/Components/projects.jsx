@@ -99,7 +99,7 @@ function Projects() {
   }, []);
   return (
     <div className='projects-container'>
-      <div className='w-full lg:p-32 p-16 pt-10 lg:pt-40'>
+      <div className='w-full lg:p-32 p-3 pt-6 lg:pt-40'>
         <div className='w-4/5 flex lg:flex-row flex-col' data-aos='fade-up'>
           <div className=''>
             <h2 className='projects-title' id='works'>

@@ -5,7 +5,7 @@ import React from 'react';
 function Contacts() {
   return (
     <div className='specialities-container' data-aos='fade-up'>
-      <div className='w-full p-20 pb-16'>
+      <div className='w-full p-10 pb-16'>
         <div className='w-4/5 flex lg:flex-row flex-col'>
           <div className='my-auto'>
             <h2 className='projects-title' id='contact'>
@@ -32,7 +32,7 @@ function Contacts() {
           </a>
         </div>
       </div>
-      <div className='w-full flex flex-col items-center justify-center px-10 pt-4 pb-6'>
+      <div className='w-full flex flex-col items-center justify-center px-3 pt-4 pb-6'>
         <p className='credit'>Designed & built by yours truly</p>
         <div className='w-full flex flex-row justify-center mb-5 mt-3'>
           <div className='my-auto'>
