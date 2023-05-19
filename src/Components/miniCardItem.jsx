@@ -4,9 +4,9 @@ import React from 'react';
 import { IoLogoGooglePlaystore } from 'react-icons/io5';
 import Design1 from '../assets/design1.svg';
 
-function CardItem({ item }) {
+function MiniCardItem({ item }) {
   return (
-    <div class='card' data-aos='fade-up'>
+    <div className='w-full flex flex-col space-y-1 rounded-lg'>
       <div class='card-content'>
         <div class='card-info-wrapper'>
           <div class='card-info'>
@@ -36,4 +36,4 @@ function CardItem({ item }) {
   );
 }
 
-export default CardItem;
+export default MiniCardItem;

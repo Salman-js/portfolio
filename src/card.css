@@ -24,7 +24,7 @@
   border-radius: 10px;
   cursor: pointer;
   display: flex;
-  height: 300px;
+  height: 200px;
   flex-direction: column;
   position: relative;
   width: 450px;
@@ -90,19 +90,6 @@ span {
   margin: 0px;
 }
 
-i {
-  color: rgb(240, 240, 240);
-}
-
-.card-image {
-  @apply rounded-t-md lg:block hidden flex justify-center overflow-hidden items-center;
-  height: 140px;
-  overflow: hidden;
-}
-.card-image > img {
-  @apply lg:block hidden;
-}
-
 .card-info-wrapper {
   align-items: center;
   display: flex;
@@ -144,8 +131,9 @@ i {
 
 @media (max-width: 500px) {
   .card {
-    width: 80%;
     height: 180px;
+    flex-shrink: 1;
+    width: calc(100% - 4px);
   }
 
   .card-info-wrapper {

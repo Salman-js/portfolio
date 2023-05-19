@@ -3,35 +3,13 @@ import HeroFooterSvg from '../assets/heroFooterSvg';
 import SpecialityItem from './specialityItem';
 
 function Specialities() {
-  const stacks = [
-    { title: 'Title', image: 'https://reactjs.org/favicon.ico' },
-    {
-      title: 'Title',
-      image: 'https://nextjs.org/static/favicon/favicon-32x32.png',
-    },
-    {
-      title: 'Title',
-      image:
-        'https://pbs.twimg.com/profile_images/1452637606559326217/GFz_P-5e_400x400.png',
-    },
-    {
-      title: 'Title',
-      image: 'https://labs.mysql.com/common/themes/sakila/favicon.ico',
-    },
-    {
-      title: 'Title',
-      image: 'https://nodejs.org/static/images/favicons/favicon-32x32.png',
-    },
-    {
-      title: 'Title',
-      image:
-        'https://react-query-v3.tanstack.com/_next/static/images/favicon-eed8346421218b24d8fd0fd55c2f9e35.png',
-    },
-    {
-      title: 'Title',
-      image: 'https://redux.js.org/img/favicon/favicon.ico',
-    },
-  ];
+  const stacks = {
+    frontend: ['ReactJs', 'NextJs', 'Svelte', 'Wordpress'],
+    backend: ['Node Js', 'Express', 'Socket.io'],
+    mobile: ['React Native'],
+    database: ['MySQL', 'MongoDB', 'Firebase', 'PostgreSQL'],
+    tools: ['Tailwind', 'Tanstack Query', 'Redux', 'GIT', 'Docker'],
+  };
   return (
     <div className='specialities-container'>
       <div className='w-full lg:p-32 p-16 pt-10 lg:pt-20'>
@@ -48,20 +26,20 @@ function Specialities() {
             <SpecialityItem
               item={{
                 title: 'Frontend',
-                stacks,
+                stacks: stacks.frontend,
               }}
             />
 
             <SpecialityItem
               item={{
                 title: 'Backend',
-                stacks,
+                stacks: stacks.backend,
               }}
             />
             <SpecialityItem
               item={{
                 title: 'Mobile',
-                stacks,
+                stacks: stacks.mobile,
               }}
             />
           </div>
@@ -69,14 +47,14 @@ function Specialities() {
             <SpecialityItem
               item={{
                 title: 'Database',
-                stacks,
+                stacks: stacks.database,
               }}
             />
 
             <SpecialityItem
               item={{
-                title: 'Data management',
-                stacks,
+                title: 'Tools',
+                stacks: stacks.tools,
               }}
             />
           </div>

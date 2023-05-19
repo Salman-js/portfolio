@@ -115,7 +115,10 @@ body {
     system-ui, sans-serif;
 }
 .project-items-container {
-  @apply w-full flex flex-col items-center pt-20;
+  @apply w-full lg:flex flex-col items-center hidden pt-20;
+}
+.mini-project-items-container {
+  @apply w-full flex flex-col items-center lg:hidden pt-20 space-y-2;
 }
 .project-item {
   @apply w-full border border-gray-700 lg:p-14 p-8 flex flex-row bg-gradient-to-tr from-gray-900 to-gray-800 my-8;
@@ -147,7 +150,7 @@ body {
   background-image: url('/specialitiesBg.svg');
 }
 .speciality-container {
-  @apply bg-[#e7ab54] p-6 rounded-2xl m-6 lg:w-2/5 w-full shadow-inner;
+  @apply bg-[#e7ab54] p-6 rounded-2xl m-6 lg:w-5/12 w-full shadow-inner flex flex-wrap;
 }
 /* =========================Contacts ============================ */
 
