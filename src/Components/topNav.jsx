@@ -158,19 +158,14 @@ function TopNav() {
               </a>
               <div className='w-full flex flex-row justify-center'>
                 <div className='my-auto'>
-                  <IconButton>
+                  <a href='https://github.com/Salman-js'>
                     <GitHub sx={{ color: '#c6bdf9', fontSize: 20 }} />
-                  </IconButton>
+                  </a>
                 </div>
-                <div className='my-auto'>
-                  <IconButton>
+                <div className='my-auto ml-3'>
+                  <a href='https://www.linkedin.com/in/salman-mohammed-970890234/'>
                     <LinkedIn sx={{ color: '#c6bdf9', fontSize: 20 }} />
-                  </IconButton>
-                </div>
-                <div className='my-auto'>
-                  <IconButton>
-                    <Twitter sx={{ color: '#c6bdf9', fontSize: 20 }} />
-                  </IconButton>
+                  </a>
                 </div>
               </div>
             </div>

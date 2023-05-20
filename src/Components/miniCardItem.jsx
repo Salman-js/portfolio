@@ -7,14 +7,14 @@ import Design1 from '../assets/design1.svg';
 function MiniCardItem({ item }) {
   return (
     <div
-      className='w-full flex flex-col space-y-1 rounded-lg'
+      className='w-full flex flex-col space-y-1 rounded-lg mt-1'
       data-aos='fade-up'
     >
       <div class='card-content'>
         <div class='card-info-wrapper'>
           <div class='card-info'>
             <div class='card-info-title'>
-              <h3>{item.title}</h3>
+              <p className='text-lg font-bold text-gray-300'>{item.title}</p>
               <p className='text-lg font-semibold text-slate-400'>
                 {item.type}
               </p>

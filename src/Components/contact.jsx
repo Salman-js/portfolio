@@ -4,7 +4,7 @@ import React from 'react';
 
 function Contacts() {
   return (
-    <div className='specialities-container' data-aos='fade-up'>
+    <div className='specialities-container'>
       <div className='w-full p-10 pb-16'>
         <div className='w-4/5 flex lg:flex-row flex-col'>
           <div className='my-auto'>
