@@ -5,10 +5,17 @@ import SpecialityItem from './specialityItem';
 function Specialities() {
   const stacks = {
     frontend: ['ReactJs', 'NextJs', 'Svelte', 'Wordpress'],
-    backend: ['Node Js', 'Express', 'Socket.io'],
+    backend: ['Node Js', 'NestJs', 'Socket.io'],
     mobile: ['React Native'],
     database: ['MySQL', 'MongoDB', 'Firebase', 'PostgreSQL'],
-    tools: ['Tailwind', 'Tanstack Query', 'Redux', 'Docker'],
+    tools: [
+      'Tailwind',
+      'Tanstack Query',
+      'Prisma',
+      'Docker',
+      'Swagger',
+      'GraphQL',
+    ],
   };
   return (
     <div className='specialities-container'>
